@@ -7,6 +7,26 @@ Google Fonts
       https://fonts.google.com/specimen/Dancing+Script?query=dancing+script
 +      Open Sans
        https://fonts.google.com/specimen/Open+Sans
+CSS = SCSS = main.scss   
++		@import './colors';
++		@import './components';
++		@import './mixins';
+
++		*,
++		*::before,
++		*::after {
++		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		}
++		html {
+			font-size: 62.5%;
+			scroll-behavior: smooth;
+		}
++		body {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.6rem;
+		}
 CSS = NAV = burger
 +      .burger-btn {
 	      position: fixed;
@@ -53,8 +73,44 @@ CSS = NAV = burger
                   transition-delay: .1s;
               }
           }
+CSS = HEADER = IMG main.scss
++		.header {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 2em;
+			height: 75vh;
+			text-align: center;
+			color: $pure-white;
+			@include heroImages('../img/header-mini.jpg');
+			background-attachment: scroll;
 
-      }
++			&__heading {
+				font-family: 'Dancing Script', cursive;
+				font-size: 4.8rem;
+				font-weight: 300;
+			}
++			&__text {
+				font-size: 1.4rem;
+			}
++			&__btn {
+				margin-top: 2em;
+				padding: 0.8em 1.6em;
+				background: $pure-white;
+				border: none;
+				border-radius: 8px;
+				color: $dark;
+				text-decoration: none;
+				text-transform: uppercase;
+				cursor: pointer;
+
++				&::before {
+					background-color: $light-white;
+				}
+			}
+		}
 CSS = Header = _components.scss
 +		.wrapper {
 			margin: 0 auto;
