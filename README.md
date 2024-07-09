@@ -5,3 +5,5 @@ Font Awesome
 Google Fonts
 +     Dancing Script
       https://fonts.google.com/specimen/Dancing+Script?query=dancing+script
++      Open Sans
+       https://fonts.google.com/specimen/Open+Sans
