@@ -102,3 +102,18 @@ CSS = Header = _components.scss
         		transform-origin: left;
     		}
              } 
+CSS = Header = _mixins.scss
++		@mixin burgerBtn {
+    			position: absolute;
+    			right: 0;
+    			height: 3px;
+    			content: '';
+    			background-color: $pure-white;
+    			transition: width .3s;
+			}
++			@mixin heroImages($bgImg) {
+    				background-image: $blue-gradient, url($bgImg);
+    				background-size: cover;
+    				background-position: center;
+    				background-attachment: fixed;
+				}
