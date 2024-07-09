@@ -7,7 +7,7 @@ Google Fonts
       https://fonts.google.com/specimen/Dancing+Script?query=dancing+script
 +      Open Sans
        https://fonts.google.com/specimen/Open+Sans
-CSS = NAV
+CSS = NAV = burger
 +      .burger-btn {
 	      position: fixed;
 	      top: 20px;
