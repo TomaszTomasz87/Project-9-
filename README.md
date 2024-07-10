@@ -82,6 +82,7 @@ CSS = SCSS = nav - big = main.scss
 			align-items: center;
 			height: 100vh;
 			width: 100%;
+ 			transform: translateX(100%);
 			background-image: $blue-gradient-solid;
 			z-index: 100;
 +		&__item {
