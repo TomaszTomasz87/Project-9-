@@ -83,6 +83,7 @@ CSS = SCSS = nav - big = main.scss
 			height: 100vh;
 			width: 100%;
  			transform: translateX(100%);
+ 			transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 			background-image: $blue-gradient-solid;
 			z-index: 100;
 +		&--active {
