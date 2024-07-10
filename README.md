@@ -85,6 +85,10 @@ CSS = SCSS = nav - big = main.scss
  			transform: translateX(100%);
 			background-image: $blue-gradient-solid;
 			z-index: 100;
++		&--active {
+			transform: translateX(0);
+		}
+   
 +		&__item {
 			position: relative;
 			display: block;
